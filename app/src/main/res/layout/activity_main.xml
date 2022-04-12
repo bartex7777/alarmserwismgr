@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+    <fragment
         android:id="@+id/kamera"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="67dp"
         android:layout_height="65dp"
         android:backgroundTint="#851313"

@@ -10,9 +10,9 @@ private const val RTSP_REQUEST_KEY = "rtsp_request"
 private const val RTSP_USERNAME_KEY = "rtsp_username"
 private const val RTSP_PASSWORD_KEY = "rtsp_password"
 
-private const val DEFAULT_RTSP_REQUEST = "rtsp://10.0.1.3:554/axis-media/media.amp"
-private const val DEFAULT_RTSP_USERNAME = ""
-private const val DEFAULT_RTSP_PASSWORD = ""
+private const val DEFAULT_RTSP_REQUEST = "rtsp://192.168.1.61:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_1"
+private const val DEFAULT_RTSP_USERNAME = "admin"
+private const val DEFAULT_RTSP_PASSWORD = "volta123"
 
 private const val LIVE_PARAMS_FILENAME = "live_params"
 

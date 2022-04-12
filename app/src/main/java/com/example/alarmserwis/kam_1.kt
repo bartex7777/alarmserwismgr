@@ -18,6 +18,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.alarmserwis.databinding.Kam1Binding
+import java.net.URI
 import java.util.concurrent.atomic.AtomicBoolean
 
 
@@ -30,7 +31,7 @@ class kam_1 : Fragment() {
     private val rtspStatusListener = object: RtspSurfaceView.RtspStatusListener {
         override fun onRtspStatusConnecting() {
 //            binding.tvStatus.text = "RTSP connecting"
-//            binding.pbLoading.visibility = View.VISIBLE
+            binding.pbLoading.visibility = View.VISIBLE
             binding.vShutter.visibility = View.VISIBLE
 //            binding.etRtspRequest.isEnabled = false
 //            binding.etRtspUsername.isEnabled = false
@@ -106,9 +107,9 @@ class kam_1 : Fragment() {
         if (DEBUG) Log.v(TAG, "onCreateView()")
 
         liveViewModel = ViewModelProvider(this).get(LiveViewModel::class.java)
-//        binding = FragmentLiveBinding.inflate(inflater, container, false)
-//
-//        binding.svVideo.setStatusListener(rtspStatusListener)
+        binding = Kam1Binding.inflate(inflater, container, false)
+
+        binding.svVideo.setStatusListener(rtspStatusListener)
 //        binding.etRtspRequest.addTextChangedListener(object : TextWatcher {
 //            override fun afterTextChanged(s: Editable?) {
 //            }
@@ -164,15 +165,15 @@ class kam_1 : Fragment() {
 //            if (binding.etRtspPassword.text.toString() != it)
 //                binding.etRtspPassword.setText(it)
 //        })
-//
+
 //        binding.bnStartStop.setOnClickListener {
 //            if (binding.svVideo.isStarted()) {
 //                binding.svVideo.stop()
 //            } else {
-//                val uri = Uri.parse(liveViewModel.rtspRequest.value)
-//                binding.svVideo.init(uri, liveViewModel.rtspUsername.value, liveViewModel.rtspPassword.value, "rtsp-client-android")
+                val uri = Uri.parse(liveViewModel.rtspRequest.value)
+                binding.svVideo.init(Uri.parse("192.168.1.64:544"), "admin", "serwis1332", "rtsp-client-android")
 //                binding.svVideo.debug = binding.cbDebug.isChecked
-//                binding.svVideo.start(binding.cbVideo.isChecked, binding.cbAudio.isChecked)
+                binding.svVideo.start(true, true);
 //            }
 //        }
 
@@ -195,14 +196,14 @@ class kam_1 : Fragment() {
     }
 
     override fun onPause() {
-//        val started = binding.svVideo.isStarted()
-//        if (DEBUG) Log.v(TAG, "onPause(), started:$started")
-//        super.onPause()
-//        liveViewModel.saveParams(requireContext())
-//
-//        if (started) {
-//            binding.svVideo.stop()
-//        }
+        val started = binding.svVideo.isStarted()
+        if (DEBUG) Log.v(TAG, "onPause(), started:$started")
+        super.onPause()
+        liveViewModel.saveParams(requireContext())
+
+        if (started) {
+            binding.svVideo.stop()
+        }
         super.onPause()
     }
 
