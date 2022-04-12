@@ -2,7 +2,10 @@ package com.example.alarmserwis;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -72,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void  kamera() {
-        Intent intent = new Intent(this, kam_1.class);
+        Intent intent = new Intent(this, kam_1_activity.class);
         startActivity(intent);
     }
     public void  sieclan() {

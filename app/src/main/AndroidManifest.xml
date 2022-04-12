@@ -43,7 +43,7 @@
             android:name=".kam_2"
             android:exported="false" />
         <activity
-            android:name=".kam_1"
+            android:name=".kam_1_activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
