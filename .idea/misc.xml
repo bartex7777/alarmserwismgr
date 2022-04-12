@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.319" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/activity_main.xml" value="0.4911699779249448" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/kam_1.xml" value="0.33645833333333336" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/kam_2.xml" value="0.2806484295845998" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/kam_3.xml" value="0.2806484295845998" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/kam_4.xml" value="0.2806484295845998" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_alarm.xml" value="0.28532608695652173" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_kamera.xml" value="0.28532608695652173" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_kd.xml" value="0.33645833333333336" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_kontakt.xml" value="0.33645833333333336" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_ofirmie.xml" value="0.33645833333333336" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_ppoz.xml" value="0.33645833333333336" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_realizacje.xml" value="0.33645833333333336" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_sieclan.xml" value="0.33645833333333336" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/l_wifi.xml" value="0.33645833333333336" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/podzial_4.xml" value="0.2806484295845998" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/layout/ustawienia.xml" value="0.2806484295845998" />
+        <entry key="..\:/Alarm Serwis/AlarmSerwis/app/src/main/res/menu/main_menu.xml" value="0.38958333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
