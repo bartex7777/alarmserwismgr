@@ -29,19 +29,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.422" />
 
-    <Button
+    <ImageButton
         android:id="@+id/bnSnapshot"
         style="@style/Widget.Material3.Button.TextButton.Icon"
         android:layout_width="137dp"
         android:layout_height="88dp"
         android:enabled="false"
         android:text="Photo"
+        android:clickable="true"
         app:icon="@android:drawable/ic_menu_camera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.754" />
+
+    <EditText
+        android:id="@+id/editTextKam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnSnapshot" />
+
+    <Button
+        android:id="@+id/add_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKam1"
+        tools:layout_editor_absoluteX="301dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
