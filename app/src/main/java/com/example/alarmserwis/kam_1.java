@@ -47,7 +47,7 @@ public class kam_1 extends AppCompatActivity {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             photo.compress(Bitmap.CompressFormat.JPEG, 50, byteArrayOutputStream);
             databaseHelper.getWritableDatabase().execSQL(
-                    "insert into zdjecia (" + byteArrayOutputStream + " , " + opis + ")"
+                    "insert into zdjecia (" + byteArrayOutputStream.toByteArray() + " , " + opis.getText().toString() + ")"
             );
             databaseHelper.close();
 
