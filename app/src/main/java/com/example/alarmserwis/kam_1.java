@@ -26,14 +26,14 @@ public class kam_1 extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.ofirmie:
-                Intent intent1 = new Intent(this, ofirmie.class);
-                this.startActivity(intent1);
-                return true;
-            case R.id.realizacje:
-                Intent intent2 = new Intent(this, realizacje.class);
-                this.startActivity(intent2);
-                return true;
+            //case R.id.ofirmie:
+              //  Intent intent1 = new Intent(this, ofirmie.class);
+              //  this.startActivity(intent1);
+               // return true;
+           // case R.id.realizacje:
+              //  Intent intent2 = new Intent(this, realizacje.class);
+              //  this.startActivity(intent2);
+               // return true;
             default:
                 return super.onOptionsItemSelected(item);
             case R.id.kontakt:

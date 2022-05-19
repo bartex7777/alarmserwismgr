@@ -22,7 +22,7 @@
         android:id="@+id/SMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wyślij SMS"
+        android:text="Wyślij"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -36,7 +36,7 @@
         android:layout_height="299dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Podaj Lokalizacje:"
+        android:hint="Podaj Lokalizacje oraz stan zmówienia:"
         android:inputType="textMultiLine"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,17 +45,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Wezwij serwis utrzymania ruchu "
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="203dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Podaj Numer:"
+        android:inputType="textMultiLine"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/SMS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintVertical_bias="0.63" />
 </androidx.constraintlayout.widget.ConstraintLayout>
